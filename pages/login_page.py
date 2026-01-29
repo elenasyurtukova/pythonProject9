@@ -16,15 +16,15 @@ class LoginPage:
 
     def enter_username(self, username):
         """Функция для ввода имени пользователя"""
-        username.field = self.driver.find_element(By.ID, 'user-name')
-        username.field.clear()
-        username.field.send_keys(username)
+        username_field = self.driver.find_element(By.ID, 'user-name')
+        username_field.clear()
+        username_field.send_keys(username)
 
     def enter_password(self, password):
         """Функция для ввода пароля"""
-        password.field = self.driver.find_element(By.ID, 'password')
-        password.field.clear()
-        password.field.send_keys(password)
+        password_field = self.driver.find_element(By.ID, 'password')
+        password_field.clear()
+        password_field.send_keys(password)
 
     def click_login(self):
         """Функция нажатия на кнопку логина (отправка формы)"""
